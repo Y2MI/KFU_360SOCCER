@@ -31,16 +31,6 @@ public:
         number = oPnum;
     }
 };
-class Players_Club{
-public:
-    string players;
-    string clubs;
-    Players_Club(string choose_Player, string choose_Club)
-    {
-        players = choose_Player;
-        clubs = choose_Club;
-    }
-};
 
 /********************COLOR FUNCTION********************|*/
 void AVT() //font color function
@@ -86,36 +76,101 @@ const char *color(int font, int back =-1 , int style = -1){ // This is belong CO
 void Players_Tabels()
 {
     AVT();
-    Players_Club("TOP 5 Players Table", "Clubs Table");
     int i=0;
+    string cond;
+
     cout
-            << endl
-            << endl
-            << color(3, BLACK, 6)
-            << setw(20)
-            << "\t\t\t\t\t********************************************"
-            << color(NC)
-            <<endl;
-    for(i=0; i<1;i++)
-    {
+    << endl
+    << endl
+    << color(3, BLACK, 6)
+    << setw(20)
+    << "\t\t\t\t\t************************************************"
+    << color(NC)
+    <<endl;
+
+    while(i<2){
+        cout
+        << color(3, BLACK, 6)
+        << "\t\t\t\t\t*"
+        << color(NC)
+        << color(3, BLACK, 6)
+        << setw(48)
+        << right
+        << "* "
+        << color(NC)
+        << endl;
+        i++;
+    }
+    cout
+    << setw(50)
+    << color(3, BLACK, 6)
+    << "*   "
+    << color(NC)
+    << color(YELLOW, BLACK, 1)
+    << "Scorers List"
+    << setw(27)
+    << "Clubs Table"
+    << color(NC)
+    << color(3, BLACK, 6)
+    << "    *"
+    << color(NC)
+    << endl;
+    i=0;
+    while(i<2){
         cout
                 << color(3, BLACK, 6)
-                << left
-                << "\t\t\t\t\t*\n\t\t\t\t\t* "
+                << "\t\t\t\t\t*"
                 << color(NC)
-                << color(YELLOW, BLACK, 1)
-                << setw(30)
-                << "TOP 5 Players Table"
-                << color(NC)
-                << left
-                << setw(10)
-                << "Clubs Table"
                 << color(3, BLACK, 6)
-                << left
-                << "*\n* "
+                << setw(48)
+                << right
+                << "* "
                 << color(NC)
                 << endl;
+        i++;
     }
+
+    cout
+    << color(3, BLACK, 6)
+    << setw(20)
+    << "\t\t\t\t\t************************************************"
+    << color(NC)
+    <<endl;
+
+    cout
+    << endl
+    << color(RED, BLACK, 3)
+    << "Do you want to go to \"SCORERS LIST\" OR \"CLUBS TABLE\"? "
+    << color(NC)
+    << endl
+    << color(GREEN, BLACK, 3)
+    << "Type 'SCORERS' to go to \"SCORERS LIST\" ; Type 'CLUBS' to go to \"CLUBS TABLE\": "
+    << color(NC);
+    getline(cin, cond);
+    i=1;
+    while(i)
+    {
+        if((cond.at(0) == 'S' || cond.at(0) == 's') && (cond.at(3) == 'r' || cond.at(3) == 'R')) {
+            i=0;
+            system("cls");
+            cout << "SCORERS";
+            break;
+        }
+        else if((cond.at(0) == 'c' || cond.at(0) == 'C') && (cond.at(3) == 'B' || cond.at(3) == 'b')){
+            i=0;
+            system("cls");
+            Club_Table();
+            break;
+        }
+        else
+        {
+            cout
+            << endl
+            << "You wrote something else, Please enter 'SOCCER' or 'CLUBS': ";
+            getline(cin, cond);
+        }
+    }
+
     system("pause");
 }
 
