@@ -166,7 +166,7 @@ void Players_Tabels()
         {
             cout
             << endl
-            << "You wrote something else, Please enter 'SOCCER' or 'CLUBS': ";
+            << "You wrote something else, Please enter 'SCORERS' or 'CLUBS': ";
             getline(cin, cond);
         }
     }
