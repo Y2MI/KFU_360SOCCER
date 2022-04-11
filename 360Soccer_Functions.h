@@ -18,7 +18,8 @@ using namespace std;
 /*****************FUNCTIONS DECLARATION****************|*/
 void Club_Table();
 void SearchByName();
-void Players_Tables();
+void SC_CL();
+void SC_Table();
 /*****************CLASSES DECLARATION*****************|*/
 class Clubs_Table // Public class to organize clubs choice table
 {
@@ -31,7 +32,6 @@ public:
         number = oPnum;
     }
 };
-
 /********************COLOR FUNCTION********************|*/
 void AVT() //font color function
 {
@@ -73,7 +73,28 @@ const char *color(int font, int back =-1 , int style = -1){ // This is belong CO
     return code;
 }
 /*****************OPERATION FUNCTIONS*****************|*/
-void Players_Tabels()
+void welcomeMSG() //Welcome Function
+{
+    AVT();
+    cout << endl << endl;
+    cout << setw(50)
+         << color(GREEN , BLACK, 5 )
+         << "Welcome to 360Soccer"
+         << color(NC)
+         << endl;
+    cout
+            << color(BLACK, WHITE, 2)
+            << setw(100)
+            << "THIS PROGRAM PROVIDE TO YOU THE ABILITY TO KNOW EVERY THING ABOUT MBS PRO. LEAGUE."
+            << color(NC)
+            << endl
+            << endl
+            << endl;
+    (system("pause"), system("cls")); // system("cls") to clean the screen
+    Club_Table();
+}
+
+void SC_CL()
 {
     AVT();
     int i=0;
@@ -92,9 +113,11 @@ void Players_Tabels()
         cout
         << color(3, BLACK, 6)
         << "\t\t\t\t\t*"
+        << setw(20)
+        << "\t*"
         << color(NC)
         << color(3, BLACK, 6)
-        << setw(48)
+        << setw(24)
         << right
         << "* "
         << color(NC)
@@ -106,27 +129,35 @@ void Players_Tabels()
     << color(3, BLACK, 6)
     << "*   "
     << color(NC)
+    << setw(12)
     << color(YELLOW, BLACK, 1)
     << "Scorers List"
-    << setw(27)
+    << color(NC)
+    << color(3, BLACK,6)
+    << "\t*"
+    << color(NC)
+    << color(YELLOW, BLACK, 1)
+    << setw(16)
     << "Clubs Table"
     << color(NC)
     << color(3, BLACK, 6)
-    << "    *"
+    << "      *"
     << color(NC)
     << endl;
     i=0;
     while(i<2){
         cout
-                << color(3, BLACK, 6)
-                << "\t\t\t\t\t*"
-                << color(NC)
-                << color(3, BLACK, 6)
-                << setw(48)
-                << right
-                << "* "
-                << color(NC)
-                << endl;
+        << color(3, BLACK, 6)
+        << "\t\t\t\t\t*"
+        << setw(20)
+        << "\t*"
+        << color(NC)
+        << color(3, BLACK, 6)
+        << setw(24)
+        << right
+        << "* "
+        << color(NC)
+        << endl;
         i++;
     }
 
@@ -174,26 +205,9 @@ void Players_Tabels()
     system("pause");
 }
 
-
-void welcomeMSG() //Welcome Function
+void SC_Table()
 {
-    AVT();
-    cout << endl << endl;
-    cout << setw(50)
-    << color(GREEN , BLACK, 5 )
-    << "Welcome to 360Soccer"
-    << color(NC)
-    << endl;
-    cout
-    << color(BLACK, WHITE, 2)
-    << setw(100)
-    << "THIS PROGRAM PROVIDE TO YOU THE ABILITY TO KNOW EVERY THING ABOUT MBS PRO. LEAGUE."
-    << color(NC)
-    << endl
-    << endl
-    << endl;
-    (system("pause"), system("cls")); // system("cls") to clean the screen
-    Club_Table();
+    
 }
 
 void Club_Table() // here we add all MBS PRO LEAGUE Clubs' names to array using Clubs_Table Class
