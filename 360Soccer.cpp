@@ -1,7 +1,8 @@
 #include "360Soccer_Functions.h"
 int main() {
-    welcomeMSG();
+   // welcomeMSG();
     //SC_CL();
+    Historical_P();
     //Club_Table();
     //SearchByName();
     return 0;

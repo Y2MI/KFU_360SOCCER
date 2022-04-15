@@ -11,7 +11,6 @@
 #include <string>
 #include <windows.h>
 #include <fstream>
-
 using namespace std;
 
 //All functions needed to generate 360Soccer program//
@@ -20,6 +19,7 @@ void Club_Table();
 void SearchByName();
 void SC_CL();
 void SC_Table();
+void Historical_P();
 /*****************CLASSES DECLARATION*****************|*/
 class Clubs_Table // Public class to organize clubs choice table
 {
@@ -32,6 +32,18 @@ public:
         number = oPnum;
     }
 };
+
+class HS {
+public:
+    string SC_NAME;
+    int SC_NUMBER;
+
+    HS(string SC_NA, int SC_NU)
+    {
+        SC_NAME = SC_NA;
+        SC_NUMBER = SC_NU;
+    }
+}; // Public class to organize historical scorers choice table
 /********************COLOR FUNCTION********************|*/
 void AVT() //font color function
 {
@@ -207,7 +219,82 @@ void SC_CL()
 
 void SC_Table()
 {
-    
+
+}
+
+void Historical_P()
+{
+    AVT();
+    int i=0;
+
+    HS SC_TABLE[] = {
+            HS("S1", 1),
+            HS("S2", 2),
+            HS("S3", 3),
+            HS("S4", 4),
+            HS("S5", 5)
+    };
+
+    cout
+    << "\n\n\n"
+    << color(MAGENTA,BLACK,5)
+    << setw(100)
+    << "+============================================+\n"
+    << color(NC)
+    << color(MAGENTA, BLACK, 5)
+    << setw(55)
+    << "[]"
+    << color(NC)
+    << color(YELLOW, BLACK, 1)
+    << setw(15)
+    << "SCORER'S NAME"
+    << color(NC)
+    << color(MAGENTA, BLACK, 5)
+    << setw(7)
+    << "||"
+    << setw(7)
+    << color(NC)
+    << color(YELLOW, BLACK, 1)
+    << "SCORER'S NUMBER"
+    << color(NC)
+    << setw(12)
+    << color(MAGENTA, BLACK, 5)
+    << "[]"
+    << color(NC)
+    << endl;
+
+    for (i = 0; i < 5; i++) {
+        cout
+        << color(MAGENTA,BLACK,5)
+        << setw(55)
+        << "[]"
+        << color(NC)
+        << color(CYAN, BLACK, 1)
+        << setw(9)
+        << SC_TABLE[i].SC_NAME
+        << color(NC)
+        << color(MAGENTA, BLACK, 5)
+        << setw(13)
+        << "||"
+        << setw(15)
+        << color(NC)
+        << color(CYAN, BLACK, 1)
+        << SC_TABLE[i].SC_NUMBER
+        << color(NC)
+        << color(MAGENTA,BLACK,5)
+        << right
+        << setw(10)
+        << "[]"
+        << color(NC)
+        << endl;
+    }
+    cout
+    << color(MAGENTA,BLACK,5)
+    << setw(100)
+    << "+============================================+\n"
+    << color(NC)
+    << endl;
+    system("pause");
 }
 
 void Club_Table() // here we add all MBS PRO LEAGUE Clubs' names to array using Clubs_Table Class
