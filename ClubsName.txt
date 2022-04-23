@@ -10,23 +10,23 @@ DAMAK
 damak
 ABHA
 abha
-AL FATH
-al fath
-AL FAIHA
-al faiha
+AL FATEH
+al fateh
+AL FAYHA
+al fayha
 AL RAED
 al raed
 AL AHLI
 al ahli
 AL FAISALY
 al faisaly
-AL TAEE
-al taee
+AL TAI
+al tai
 AL TAAWOUN
 al taawoun
 AL BATIN
 al batin
-AL ITTIFAQ
-al ittifaq
+AL ETTIFAQ
+al ettifaq
 AL HAZEM
 al hazem
