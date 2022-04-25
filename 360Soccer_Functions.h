@@ -116,7 +116,7 @@ void welcomeMSG() //Welcome Function
     << endl
     << endl
     << endl;
-    (system("pause"), system("cls")); // system("cls") to clean the screen
+    system("cls"); // system("cls") to clean the screen
     PL_CL();
 }
 
@@ -227,8 +227,6 @@ void PL_CL()
             getline(cin, cond);
         }
     }
-
-    system("pause");
 }
 
 void Club_Table() // here we add all MBS PRO LEAGUE Clubs' names to array using Clubs_Table Class
@@ -405,6 +403,7 @@ void Club_Table() // here we add all MBS PRO LEAGUE Clubs' names to array using 
             << color(NC);
             while (i){
                 cin >> TP_Number;
+                cin.ignore();
                 switch (TP_Number) {
                     case 1:{
                         i=0;
@@ -486,12 +485,10 @@ void Club_Table() // here we add all MBS PRO LEAGUE Clubs' names to array using 
         else{ // check if the input is neither name nor number
             cout
             << endl
-            << "You wrote something else, Please enter 'name' or 'number'";
+            << "You wrote something else, Please enter 'name' or 'number': ";
             getline(cin, condition);
         }
     }
-
-    system("pause"); // to freeze the output console
 }
 
 void SearchByName()
@@ -609,7 +606,6 @@ void SearchByName()
         SearchByName(); // if input does not match any element it will make the user try again
     }
     ClubsFile.close(); // close the file
-    system("pause");
 } // here search by club's name function
 
 void SCORER_ASSIST()
@@ -743,8 +739,6 @@ void SCORER_ASSIST()
             getline(cin, move_TO);
         }
     }
-
-    system("pause");
 } // here where user can choose from player table (scorers, assists)
 
 void HIS_CUR_A()
@@ -879,8 +873,6 @@ void HIS_CUR_A()
             getline(cin, move_TO);
         }
     }
-
-    system("pause");
 } // historical and current assist players tabel
 
 void HIS_ASSIST(){
@@ -1166,7 +1158,6 @@ void HIS_ASSIST(){
     getline(cin, move);
 
     ReturnF3(move);// return f 3
-    system("Pause");
 } // historical assist // done 1st Q *********
 
 void HIS_ASSIST_SEARCH()
@@ -1617,7 +1608,6 @@ void CUR_ASSIST(){
     getline(cin, move);
 
     ReturnF4(move);  // return f 4
-    system("Pause");
 }
 
 void CUR_ASSIST_SEARCH()
@@ -1916,8 +1906,6 @@ void HIS_CUR_S()
             getline(cin, move_TO);
         }
     }
-
-    system("pause");
 } // historical and current scorers' table
 
 void C_SCORERS()
@@ -2204,7 +2192,6 @@ void C_SCORERS()
     getline(cin, move);
 
     ReturnF1(move);
-    system("Pause");
 } // current scorers table names // done 1st Q *******
 
 void CS_SEARCH()
@@ -2655,7 +2642,6 @@ void HIS_SCORERS(){
     getline(cin, move);
 
     ReturnF2(move); // return f2
-    system("Pause");
 } // historical scorers' table names // done 1st Q *****
 
 void HIS_SEARCH()
