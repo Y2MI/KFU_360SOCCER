@@ -6,7 +6,7 @@ The version 1 of 360 soccer program is developed by groub of KFU student.
 #
 Subject name: Foundamental of programming.
 #
-So lets see current features in our program whitch is about MBS. Pro leage.
+So lets see the current features in our program which those are about MBS. Pro league.
 
 # Players section:
 Users can choose "Assist players", "Scorer players".
