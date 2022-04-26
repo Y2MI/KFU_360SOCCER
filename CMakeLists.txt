@@ -1,9 +1,6 @@
-cmake_minimum_required(VERSION 3.21)
-project(360Soccer)
+cmake_minimum_required(VERSION 3.22)
+project(360SCORER_V2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(360Soccer
-        360Soccer.cpp
-        360Soccer_Functions.h
-        )
+add_executable(360SCORER_V2 main.cpp 360SCORER.V2.h)
