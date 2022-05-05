@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\user\OneDrive\Desktop\F.O.P\360Soccer project\360SCORER.V2" -B"C:\Users\user\OneDrive\Desktop\F.O.P\360Soccer project\360SCORER.V2\cmake-build-debug"
+  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\user\OneDrive\Desktop\F.O.P\360Soccer project\360SCORER.V2" -B"C:\Users\user\OneDrive\Desktop\F.O.P\360Soccer project\360SCORER.V2\cmake-build-debug-coverage"
   description = Re-running CMake...
   generator = 1
 
