@@ -1,3 +1,0 @@
-C:/Users/user/OneDrive/Desktop/F.O.P/360Soccer project/360SCORER.V2/cmake-build-debug-coverage/CMakeFiles/360SCORER_V2.dir
-C:/Users/user/OneDrive/Desktop/F.O.P/360Soccer project/360SCORER.V2/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
-C:/Users/user/OneDrive/Desktop/F.O.P/360Soccer project/360SCORER.V2/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
