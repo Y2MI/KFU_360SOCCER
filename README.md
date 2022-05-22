@@ -23,7 +23,6 @@ There are two choices "Current assist players", "Historical assist players".
 ![image](https://user-images.githubusercontent.com/76477902/165005716-19489743-2db7-40d0-b1d3-30a6663d7e1e.png)
 # Clubs section:
 ![image](https://user-images.githubusercontent.com/76477902/165005788-f1916078-783b-4019-aa84-e71bff5a12f2.png)
-# Clubs section not complete yet (comming soon!!).
 # Finally rate section:
 ![image](https://user-images.githubusercontent.com/76477902/165005964-9de1e29d-935c-40d7-b317-b498d7202715.png)
 
