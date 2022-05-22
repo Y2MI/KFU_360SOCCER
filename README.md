@@ -1,8 +1,8 @@
 # KFU_360SOCCER
 # 
-# Hello there. This project is for study purpose.
+# Hello there.
 #
-The version 1 of 360 soccer program is developed by groub of KFU student.
+The version 2 of 360 soccer program is developed by groub of KFU student.
 #
 Subject name: Foundamental of programming.
 #
