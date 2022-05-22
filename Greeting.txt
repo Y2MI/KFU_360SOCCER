@@ -1,0 +1,36 @@
+|--[360 SOCCER]--|
+
+ - Hello there!
+   Let me introduce our project to you. "360 SOCCER" is a search engine for MBS PRO LEAGUE.
+   Where you can search about your club records or even your favorite player.
+   
+ - First page:
+   You can choose if you want to search about clubs or players.
+   After you choose you will start our program.
+   You can re choose many times, enjoy :)
+
+ - To safe your time this is a map for our project.
+ /__________________________________________________________________________________\
+ |                              [360 SOCCER MAP!]                                   |
+ |            x                                                                     |
+ |    x [Greeting page] x <==== {$..You are here now..$}                            |
+ |            ||                                                                    |
+ |            \/                                                                    |
+ |  {CLUBS OR PLAYERS PAGE} ====>> {CLUBS PAGE} =====>> {16 CLUBS}.                 |
+ |            ||                                                                    |
+ |            ||                                                                    |
+ |            \/                                                                    |
+ |  {SCORER OR ASSIST PAGE} ====>> {SCORERS PAGE} =====>> {CURRENT SCORERS}.        |
+ |            ||           []            ||              []                         |
+ |            ||           []            ||              []                         |
+ |            \/           []            \/              []                         |
+ | ++===={ASSIST PAGE}     []    {HISTORICAL SCORERS}.   []                         |
+ | ||         ||           []                            []                         |
+ | ||         ||           [][][][][][][][][][][][][][][][]                         |
+ | ||         \/                                                                    |
+ | ||   {CURRENT ASSIST}.                                                           |
+ | ++=========++                                                                    |
+ |            ||                                                                    |
+ |            \/                                                                    |
+ |    {HISTORICAL ASSIST}.                                                          |
+ \__________________________________________________________________________________/
