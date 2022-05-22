@@ -2,12 +2,13 @@
 # 
 # Hello there.
 #
-The version 2 of 360 soccer program is developed by groub of KFU student.
+The version 2 of 360SOCCER.
 #
 Subject name: Foundamental of programming.
 #
-So lets see the current features in our program which those are about MBS. Pro league.
-
+The current features in our program which those are about MBS. Pro league.
+# Greeting page and toturial:
+![image](https://user-images.githubusercontent.com/76477902/169704904-ad23d938-9ddd-400c-b5cf-80a89e7d4ab9.png)
 # Players section:
 Users can choose "Assist players", "Scorer players".
 ![image](https://user-images.githubusercontent.com/76477902/165005335-c6cf0fac-c0cc-4bed-8fc8-2bb4238ded4a.png)
@@ -26,5 +27,4 @@ There are two choices "Current assist players", "Historical assist players".
 # Finally rate section:
 ![image](https://user-images.githubusercontent.com/76477902/165005964-9de1e29d-935c-40d7-b317-b498d7202715.png)
 
-# Thank you all, my first project is done!
-# I will improve myself in the future. <3
+# Thank you!
